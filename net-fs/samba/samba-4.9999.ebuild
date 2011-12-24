@@ -99,6 +99,7 @@ src_install() {
 	find "${D}" -type f -name "*.so" -exec chmod +x {} +
 
 	newinitd "${FILESDIR}/samba4.initd" samba || die "newinitd failed"
+	doenvd  "${CONFDIR}/75samba4" || die "doenvd failed"
 
 	#remove conflicting file for tevent profided by sys-libs/tevent
 	find "${D}" -type f -name "_tevent.so" -exec rm -f {} \;
@@ -113,6 +114,7 @@ src_test() {
 pkg_postinst() {
 	# Optimize the python modules so they get properly removed
 	python_mod_optimize "${PN}"
+	env-update
 
 	einfo "See http://wiki.samba.org/index.php/Samba4/HOWTO for more"
 	einfo "information about samba 4."

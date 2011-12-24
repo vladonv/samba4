@@ -4,13 +4,13 @@
   <repo quality="experimental" status="unofficial">
     <name>samba4</name>
     <description>experimental ebuilds for samba4</description>
-    <homepage>https://github.com/ekohl/samba4</homepage>
+    <homepage>https://github.com/vladonv/samba4</homepage>
     <owner>
-      <email>ewoud+overlay@kohlvanwijngaarden.nl</email>
-      <name>Ewoud Kohl van Wijngaarden</name>
+      <email>vlad@vorobev.name</email>
+      <name>Vlad Vorobev</name>
     </owner>
-    <source type="git">git://github.com/ekohl/samba4.git</source>
-    <source type="git">https://github.com/ekohl/samba4.git</source>
-    <feed>https://github.com/feeds/ekohl/commits/samba4/master</feed>
+    <source type="git">git://github.com/vladonv/samba4.git</source>
+    <source type="git">https://github.com/vladonv/samba4.git</source>
+    <feed>https://github.com/feeds/vladonv/commits/samba4/master</feed>
   </repo>
 </repositories>
